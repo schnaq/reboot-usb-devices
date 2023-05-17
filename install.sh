@@ -9,3 +9,6 @@ cd uhubctl
 make
 sudo make install
 cd ..
+
+printf "\n# Copy logrotate config\n"
+sudo cp reboot-usb-devices.logrotate /etc/logrotate.d/reboot-usb-devices
