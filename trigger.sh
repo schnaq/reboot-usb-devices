@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "$(date): Camera disconnected" >> /home/pi/reboot-usb-devices/logs/reboot-usb-devices.log
+echo "$(date): Camera disconnected" >> /opt/reboot-usb-devices/logs/reboot-usb-devices.log
 
 # -p: port numbers
 # -l: hub number

@@ -7,6 +7,12 @@ in this case a Nikon camera.
 
 ## Installation
 
+Clone this repo to /opt/reboot-usb-devices
+
+```bash
+sudo git clone https://github.com/schnaq/reboot-usb-devices.git /opt/reboot-usb-devices
+```
+
 Install uhubctl with the following command:
 
 ```bash
@@ -37,5 +43,5 @@ following command:
 
 ```bash
 sudo cp 99-reboot-usb-devices.rules /etc/udev/rules.d/
-sudo udevadm control --reload-rules
+sudo udevadm control --reload-rules && udevadm trigger
 ```

@@ -1,1 +1,1 @@
-SUBSYSTEM=="usb", ACTION=="remove", ATTR{idVendor}==04b0", ATTR{idProduct}==”044c", RUN="bash /home/pi/reboot-usb-devices/trigger.sh"
+SUBSYSTEM=="usb", ACTION=="remove", ATTR{idVendor}==04b0", ATTR{idProduct}==”044c", RUN="bash /opt/reboot-usb-devices/trigger.sh"
