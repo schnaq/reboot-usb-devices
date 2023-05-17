@@ -16,7 +16,7 @@ sudo git clone https://github.com/schnaq/reboot-usb-devices.git /opt/reboot-usb-
 Install uhubctl with the following command:
 
 ```bash
-bash install.sh
+sudo bash install.sh
 ```
 
 ## Check USB Devices
