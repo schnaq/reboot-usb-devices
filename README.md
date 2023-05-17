@@ -36,6 +36,6 @@ Copy the udev rule to `/etc/udev/rules.d`. Then reload the rules with the
 following command:
 
 ```bash
+sudo cp 99-reboot-usb-devices.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules
 ```
-
