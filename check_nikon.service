@@ -1,0 +1,11 @@
+[Unit]
+Description=Check Nikon Service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/opt/reboot-usb-devices/check-nikon.sh
+
+[Install]
+WantedBy=multi-user.target
