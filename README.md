@@ -16,7 +16,7 @@ sudo git clone https://github.com/schnaq/reboot-usb-devices.git /opt/reboot-usb-
 Install uhubctl with the following command:
 
 ```bash
-sudo bash install.sh
+sudo ./install.sh
 ```
 
 ## Check via `gphoto2` for Nikon Connection
