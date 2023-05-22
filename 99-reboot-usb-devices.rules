@@ -1,2 +1,0 @@
-# SUBSYSTEM=="usb", ACTION=="remove", RUN+="/bin/sh -c '/sbin/uhubctl -a cycle -l 2; echo \"$(date): Resetting USB Hub\" >> /opt/reboot-usb-devices/logs/reboot-usb-devices.log'"
-SUBSYSTEM=="usb", ENV{ID_VENDOR_FROM_DATABASE}=="Nikon Corp.", ACTION=="remove", RUN="/opt/reboot-usb-devices/trigger.sh"
