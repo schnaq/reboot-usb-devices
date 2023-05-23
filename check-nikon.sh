@@ -1,17 +1,20 @@
 #!/bin/bash
 
-echo "$(date): Checking for Nikon Cameras" >> /opt/reboot-usb-devices/logs/reboot-usb-devices.log
+BASE=/opt/reboot-usb-devices
+
+echo "$(date): Checking for Nikon Cameras" >> $BASE/logs/reboot-usb-devices.log
+
+sudo rm $BASE/reboot.lock
 
 while true
 do
-
   gphoto2 --auto-detect | grep Nikon
   if [ $? -eq 0 ]
   then
-    echo "$(date): Nikon found" # >> /opt/reboot-usb-devices/logs/reboot-usb-devices.log
+    echo "$(date): Nikon found" # >> $BASE/logs/reboot-usb-devices.log
   else
-    echo "$(date): Nikon not found" >> /opt/reboot-usb-devices/logs/reboot-usb-devices.log
-    /bin/bash /opt/reboot-usb-devices/reboot-usb.sh &
+    echo "$(date): Nikon not found" >> $BASE/logs/reboot-usb-devices.log
+    /bin/bash $BASE/reboot-usb.sh &
   fi
   sleep 1
 done
