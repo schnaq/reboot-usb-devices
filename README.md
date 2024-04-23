@@ -11,6 +11,7 @@ Clone this repo to /opt/reboot-usb-devices
 
 ```bash
 sudo git clone https://github.com/schnaq/reboot-usb-devices.git /opt/reboot-usb-devices
+cd /opt/reboot-usb-devices
 ```
 
 Install uhubctl with the following command:
