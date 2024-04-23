@@ -6,7 +6,7 @@ sudo apt-get install -y libusb-1.0-0-dev
 
 sudo git clone https://github.com/mvp/uhubctl.git
 cd uhubctl
-make
+sudo make
 sudo make install
 cd ..
 
